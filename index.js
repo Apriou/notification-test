@@ -1,4 +1,4 @@
-const express = require("express");
+﻿const express = require("express");
 const Expo = require("expo-server-sdk").default;
 const cors = require("cors");
 
@@ -29,7 +29,7 @@ expressServer.listen(process.env.PORT || 3000, () => {
         {
           to: token,
           sound: "default",
-          body: "Notification test",
+          body: "Bienvenue dans meteo-map, voici une notification envoyé depuis un serveur nodeJS distant",
           data: { test: "dataTest" },
         },
       ];
