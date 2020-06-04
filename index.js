@@ -16,6 +16,7 @@ expressServer.listen(process.env.PORT || 3000, () => {
   //Routage GET
   //url/?token=34ET5533RR par ex
   expressServer.get("/", function (req, res) {
+    //On extrait le token
     const token = req.query.token;
     //On verifie si c'est un token expo valide
     if (!Expo.isExpoPushToken(token)) {
