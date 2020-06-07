@@ -29,7 +29,7 @@ expressServer.listen(process.env.PORT || 3000, () => {
         {
           to: token,
           sound: "default",
-          body: "Bienvenue dans meteo-map, voici une notification envoyé depuis un serveur nodeJS distant",
+          body: "Bienvenue dans meteo-map, voici un exemple de notification envoyé depuis un serveur nodeJS distant",
           data: { test: "dataTest" },
         },
       ];
