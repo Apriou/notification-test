@@ -33,9 +33,11 @@ expressServer.listen(process.env.PORT || 3000, () => {
           data: { test: "dataTest" },
         },
       ];
+	console.log("messages: ", messages );
       expo
         .sendPushNotificationsAsync(messages)
         .then((ticket) => {
+		console.log("Ticket: ", ticket );
           res.send({ ticket: ticket });
         })
         .catch((error) => {
